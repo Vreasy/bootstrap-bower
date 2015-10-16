@@ -1548,6 +1548,8 @@ function ($compile, $parse, $document, $position, dateFilter, dateParser, datepi
           scope.close();
         } else if (evt.which === 40 && !scope.isOpen) {
           scope.isOpen = true;
+        } else if (evt.which === 9 && scope.isOpen) {
+          scope.close();
         }
       };
 
